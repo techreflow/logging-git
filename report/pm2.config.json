@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "M3 Report",
+      "script": "/home/ubuntu/report/AX302_DR.py",
+      "interpreter": "/usr/bin/python3",
+      "cron_restart": "0 1 * * *",  // 1:00 AM UTC (6:30 AM IST)
+      "autorestart": false
+    },
+    {
+      "name": "M1 Report",
+      "script": "/home/ubuntu/report/AX303_DR.py",
+      "interpreter": "/usr/bin/python3",
+      "cron_restart": "50 1 * * *",  // 1:50 AM UTC (6:20 AM IST)
+      "autorestart": false
+    }
+  ]
+}
